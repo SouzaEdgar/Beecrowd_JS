@@ -15,3 +15,19 @@ Obs: Utilize ponto (.) para separar a parte decimal.
 
 
 
+/*
+ Ponto flutuante (irao utilizar no maximo 2 casas)
+ Notas: 100 50 20 10 5 2
+ Moedas: 1 0.50 0.25 0.10 0.5 0.01
+
+ 0 < INPUT < 1000000.00
+
+ PONTO FLUTUANTE com "."
+ .toFixed(2) // Vai tratar como String
+ parseFloat(X) // Ira tratar como float
+
+ Portanto
+ parseFloat(numero.toFixed(2))
+*/
+
+
