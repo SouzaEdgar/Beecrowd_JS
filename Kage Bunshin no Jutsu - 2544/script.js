@@ -28,8 +28,16 @@ Para cada caso de teste, imprima uma linha contendo o número de vezes que a té
 
  Como o codigo deve reagir para caso a contagem seja um valor impar?
  >>> Deixar invalido ate o momento
+
+ >>> O problema não é em ser impar o numero de clones, mas sim em se é possivel alcançar X com todos os clones usando o jutsu.
+ Ex:
+ INPUT 10
+ Temos 1 ninja, que usa o Jutsu e vira 2 Ninjas, temos 2 Ninjas que usam o Jutsu e viram 4, 8 e depois 16, eles pularam 10, mas se o ninja usa o Jutsu todos os clones tambem usam, não sendo possivel alcançar a marca de 10 ninjas.
+
+ Solução:
+ >> Um laço While que ira calcular desde o 2 um somatorio da multiplicação do valor atual por 2, se ele passar do valor pretendido então o Input não é valido, se ele chegar no exato valor, então o Input é valido
 */
-for (x in lines) {
+for (let x in lines) {
     let ninja = parseInt(lines[x]);
     if (ninja >= 1 && ninja <= 1000000) {
         if (ninja == 1) {
