@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var input = require('fs').readFileSync('./Kage Bunshin no Jutsu - 2544/stdin', 'utf8');
 var lines = input.split('\n');
 
 /* 
@@ -29,3 +29,14 @@ Para cada caso de teste, imprima uma linha contendo o número de vezes que a té
  Como o codigo deve reagir para caso a contagem seja um valor impar?
  >>> Deixar invalido ate o momento
 */
+for (x in lines) {
+    let ninja = parseInt(lines[x]);
+    if (ninja >= 1 && ninja <= 1000000) {
+        if (ninja == 1) {
+            console.log(0);
+        } else if (ninja % 2 === 0) {
+            console.log(ninja/2);
+        }
+    }
+}
+
