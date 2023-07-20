@@ -18,3 +18,14 @@ A entrada termina com fim-de-arquivo (EOF).
 Saída
 Para cada caso de teste, imprima uma linha contendo o número de vezes que a técnica foi utilizada.
 */
+
+/*
+ A ideia aqui é fazer uma contagem
+ Input >> resulta no numero de ninjas e clones previamente
+ Ex:
+ 1 >> 1 ninja (portanto nenhum jutsu foi utilizado)
+ 4 >> 4 ninjas (portanto o jutsu foi utilizado 2 vezes (1 ninja usa 1 vez, viram 2 que usam de novo e viram 4, logo 2 vezes foi utilizado o jutsu))
+
+ Como o codigo deve reagir para caso a contagem seja um valor impar?
+ >>> Deixar invalido ate o momento
+*/
