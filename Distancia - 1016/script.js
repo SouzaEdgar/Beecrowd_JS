@@ -15,3 +15,4 @@ Saída
 Imprima o tempo necessário seguido da mensagem "minutos".
 */
 
+console.log(parseInt(input)*2 + " minutos");
