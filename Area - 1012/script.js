@@ -15,3 +15,19 @@ Saída
 O arquivo de saída deverá conter 5 linhas de dados. Cada linha corresponde a uma das áreas descritas acima, sempre com mensagem correspondente e um espaço entre os dois pontos e o valor. O valor calculado deve ser apresentado com 3 dígitos após o ponto decimal.
 */
 
+const a = parseFloat(input.split(" ")[0]);
+const b = parseFloat(input.split(" ")[1]);
+const c = parseFloat(input.split(" ")[2]);
+
+// triangulo
+const tri = parseFloat((a*c)/2).toFixed(3);
+// circulo
+const cir = parseFloat(3.14159*(c**2)).toFixed(3);
+// trapezio
+const tra = parseFloat(((a+b)*c)/2).toFixed(3);
+// quadrado
+const qua = parseFloat(b**2).toFixed(3);
+// retangulo
+const ret = parseFloat(a*b).toFixed(3);
+
+console.log(`TRIANGULO: ${tri}\nCIRCULO: ${cir}\nTRAPEZIO: ${tra}\nQUADRADO: ${qua}\nRETANGULO: ${ret}`);
