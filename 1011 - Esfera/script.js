@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./Esfera - 1011/stdin', 'utf8');
+var input = require('fs').readFileSync('./1011 - Esfera/stdin', 'utf8');
 var lines = parseInt(input.split('\n'));
 
 /*

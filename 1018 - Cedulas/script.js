@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./Cedulas - 1018/stdin', 'utf8'); /* APAGAR O . */
+var input = require('fs').readFileSync('./1018 - Cedulas/stdin', 'utf8'); /* APAGAR O . */
 var lines = parseInt(input.split('\n'));
 
 /*

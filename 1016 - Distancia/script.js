@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./Distancia - 1016/stdin', 'utf8');
+var input = require('fs').readFileSync('./1016 - Distancia/stdin', 'utf8');
 var lines = parseInt(input.split('\n'));
 
 /*

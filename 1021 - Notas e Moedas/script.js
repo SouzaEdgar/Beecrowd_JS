@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./Notas e Moedas - 1021/stdin', 'utf8');
+var input = require('fs').readFileSync('./1021 - Notas e Moedas/stdin', 'utf8');
 var lines = parseInt(input.split('\n'));
 
 

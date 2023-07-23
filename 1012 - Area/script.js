@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./Area - 1012/stdin', 'utf8');
+var input = require('fs').readFileSync('./1012 - Area/stdin', 'utf8');
 var lines = parseInt(input.split('\n'));
 
 /*

@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./Kage Bunshin no Jutsu - 2544/stdin', 'utf8');
+var input = require('fs').readFileSync('./2544 - Kage Bunshin no Jutsu/stdin', 'utf8');
 var lines = input.split('\n');
 
 for (let x in lines) {
