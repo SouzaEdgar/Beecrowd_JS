@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./1045 - Tipos de Triangulos/stdin', 'utf8');
+var input = require('fs').readFileSync('./1160 - Crescimento Populacional/stdin', 'utf8');
 var lines = input.split('\n');
 
 /*
@@ -14,3 +14,31 @@ Atenção: A população é sempre um valor inteiro, portanto, um crescimento de
 Saída
 Imprima, para cada caso de teste, quantos anos levará para que a cidade A ultrapasse a cidade B em número de habitantes. Obs.: se o tempo for mais do que 100 anos o programa deve apresentar a mensagem: Mais de 1 seculo. Neste caso, acredito que seja melhor interromper o programa imediatamente após passar de 100 anos, caso contrário você poderá receber como resposta da submissão deste problema "Time Limit Exceeded".
 */
+
+const t = parseInt(lines[0]);
+
+if (t >= 0 && t <= 3000) {
+    for (let x = 1; x <= t; x++) {
+        const pa = parseInt(lines[x].split(" ")[0]);
+        const pb = parseInt(lines[x].split(" ")[1]);
+
+        const g1 = parseFloat(lines[x].split(" ")[2]);
+        const g2 = parseFloat(lines[x].split(" ")[3]);
+        
+        let z = 0;
+        let mensagem = "";
+        let cresA = pa;
+        let cresB = pb;
+
+        while (cresA <= cresB) {
+            z++;
+            cresA += parseInt(cresA * (g1/100));
+            cresB += parseInt(cresB * (g2/100));
+            mensagem = `${z} anos.`;
+            if (z > 100) {mensagem = "Mais de 1 seculo."; break;}
+        }
+        console.log(mensagem);
+    }
+}
+
+
