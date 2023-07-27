@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./2850 - Papagaio Poliglota/stdin', 'utf8');
+var input = require('fs').readFileSync('./3084 - Relogio Antigo/stdin', 'utf8');
 var lines = input.split('\n');
 
 /*
@@ -12,4 +12,15 @@ A entrada consiste em vários casos de teste e é finalizada pelo fim de arquivo
 Saída
 Para cada caso de teste, imprima uma única linha com o valor da hora e do minuto no formato "hh:mm" (sem aspas), conforme pode ser observado nos exemplos.
 */
+// Regra de tres, onde rNum1 = valor atribuido ao 360 (num1) que para as horas tem valor de 12 e para os minutos tem valor 60
+//  enquanto queremos encontrar o rNum2 que seria o valor atribuido ao num2 (input)
+function regra3(rNum1, num2) {
+    return ("00" + ((rNum1*num2)/360)).slice(-2);
+}
 
+for (let x = 0; x < lines.length; x++) {
+    const h = parseInt(lines[x].split(" ")[0]);
+    const m = parseInt(lines[x].split(" ")[1]);
+
+    console.log(`${regra3(12, h)}:${regra3(60, m)}`);
+}
