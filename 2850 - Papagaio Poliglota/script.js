@@ -12,3 +12,12 @@ Saída
 Para cada condição de levantamento de pernas do papagaio, imprima a linguagem que ele utilizará. Caso ele levante as duas pernas, imprima “caiu”. Quebre uma linha a cada caso de teste.
 */
 
+//              0          1           2           3
+const resp = ['esquerda', 'direita', 'nenhuma', 'as duas'];
+
+for (let x = 0; x < lines.length; x++) {
+    if (resp[0] === lines[x].replace("\r","")) {console.log("ingles")} else
+    if (resp[1] === lines[x].replace("\r","")) {console.log("frances")} else
+    if (resp[2] === lines[x].replace("\r","")) {console.log("portugues")} else
+    if (resp[3] === lines[x].replace("\r","")) {console.log("caiu")}
+}
