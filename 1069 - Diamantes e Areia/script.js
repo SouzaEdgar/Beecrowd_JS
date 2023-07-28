@@ -11,3 +11,23 @@ Saída
 Você deve imprimir a quantidade de diamantes possíveis de serem extraídos em cada caso de entrada.
 */
 
+const retirada = parseInt(lines[0]);
+
+for (let x = 1; x <= retirada; x++) {
+    const mina = String(lines[x].replace(".","")); // Nao consegui fazer um replace funcional
+
+    let esq = 0;
+    let fechou = 0;
+
+    for (let y = 0; y < mina.length; y++) {
+        if (mina[y] == "<") {
+            esq++;
+        }
+        else if (esq > 0 && mina[y] == ">") {
+            esq--;
+            fechou++;
+        }
+    }
+
+    console.log(fechou)
+}
