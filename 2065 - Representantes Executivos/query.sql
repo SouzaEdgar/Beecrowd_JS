@@ -57,3 +57,7 @@ name	name
 Computer desk	Guilerme Staff
 Chair	Caroline Silva 
 */
+
+SELECT products.name, providers.name
+FROM products, providers
+WHERE id_providers = providers.id AND id_categories = 6
