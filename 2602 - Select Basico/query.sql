@@ -30,3 +30,7 @@ Pedro Augusto da Rocha
 Jane Ester
 Marcos Antônio dos Santos 
 */
+
+SELECT name
+FROM customers
+WHERE state = 'RS'
