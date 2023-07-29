@@ -30,3 +30,7 @@ id	name
 3	Towel holder
 5	Chair 
 */
+
+SELECT id, name
+FROM products
+WHERE price < 10 OR price > 100
