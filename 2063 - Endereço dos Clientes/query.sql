@@ -29,3 +29,7 @@ Pedro Augusto da Rocha
 Jane Ester
 Marcos Antônio dos Santos 
 */
+
+SELECT name, street
+FROM customers
+WHERE city = 'Porto Alegre'
