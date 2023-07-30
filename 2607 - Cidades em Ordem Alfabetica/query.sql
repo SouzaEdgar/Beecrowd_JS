@@ -29,3 +29,7 @@ Rio de Janeiro
 Salvador
 São Paulo 
 */
+
+SELECT city
+FROM providers
+ORDER BY city ASC

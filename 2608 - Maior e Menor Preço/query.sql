@@ -23,3 +23,6 @@ Exemplo de Saída
 price	price
 800	25.50 
 */
+
+SELECT MAX(price), MIN(price)
+FROM products;
