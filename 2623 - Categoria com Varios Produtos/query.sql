@@ -36,3 +36,8 @@ Exemplo de saída
 name	name
 Red Chair	Super Luxury 
 */
+
+SELECT products.name, categories.name
+FROM products, categories
+WHERE amount > 100 AND id_categories IN ('1','2','3','6','9')
+AND id_categories = categories.id;

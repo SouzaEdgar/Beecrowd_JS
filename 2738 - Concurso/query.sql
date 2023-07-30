@@ -54,3 +54,8 @@ Ronald D Jones	26.70
 William K Spencer	14.40
 Barbra J Cable	13.30 
 */
+
+SELECT candidate.name, ROUND((((math*2)+(specific*3)+(project_plan*5))/10), 2) AS 'avg'
+FROM candidate, score
+WHERE candidate_id = candidate.id
+ORDER BY avg DESC;

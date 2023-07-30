@@ -50,5 +50,10 @@ name	name	price
 Red Chair	Sansul SA	2150.00 
 */
 
+SELECT products.name, providers.name, price
+FROM products, providers, categories
+WHERE price > 1000 AND categories.name = 'Super Luxury' 
+AND categories.id = id_categories AND providers.id = id_providers;
+
 
 

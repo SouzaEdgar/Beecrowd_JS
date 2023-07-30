@@ -32,4 +32,7 @@ id	name
 2	The Battle of the Dark River 
 */
 
+SELECT movies.id, movies.name
+FROM movies, genres
+WHERE description = 'Action' AND id_genres = genres.id
 

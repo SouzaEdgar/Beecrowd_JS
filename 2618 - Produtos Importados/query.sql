@@ -49,3 +49,9 @@ Exemplo de saída
 name	name	name
 TV	Sansul SA	Imported 
 */
+
+SELECT products.name, providers.name, categories.name
+FROM products, providers, categories
+WHERE providers.name = 'Sansul SA' AND categories.name = 'Imported' 
+AND categories.id = id_categories AND providers.id = id_providers;
+

@@ -36,3 +36,7 @@ Exemplo de saída
 id	name
 5	João Almeida Lima 
 */
+
+SELECT customers.id, name
+FROM customers
+WHERE customers.id NOT IN (SELECT id_customers FROM locations);

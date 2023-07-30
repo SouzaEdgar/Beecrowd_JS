@@ -25,3 +25,6 @@ Exemplo de saída
 count
 4 
 */
+
+SELECT COUNT(DISTINCT city)
+FROM customers;

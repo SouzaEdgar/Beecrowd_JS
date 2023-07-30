@@ -39,3 +39,8 @@ Cecília Olivia Rodrigues	2
 Sabrina Heloisa Gabriela Barros	3
 Joaquim Diego Lorenzo Araújo	5 
 */
+
+SELECT customers.name, orders.id
+FROM customers, orders
+WHERE orders_date >= '2016-01-01' AND orders_date <= '2016-06-30'
+AND id_customers = customers.id;

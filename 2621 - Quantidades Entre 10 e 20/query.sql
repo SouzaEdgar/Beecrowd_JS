@@ -37,3 +37,9 @@ Exemplo de saída
 name
 Executive Chair 
 */
+
+SELECT products.name
+FROM products, providers
+WHERE amount >= 10 AND amount <= 20 
+AND providers.name LIKE 'P%'
+AND id_providers = providers.id;

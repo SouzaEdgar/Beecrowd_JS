@@ -35,3 +35,7 @@ name	rentals_date
 Rebeca Barbosa Santos	2016-09-10 
 */
 
+SELECT name, rentals_date 
+FROM customers, rentals
+WHERE rentals_date >= '2016-09-01' AND rentals_date <= '2016-09-30'
+AND customers.id = id_customers

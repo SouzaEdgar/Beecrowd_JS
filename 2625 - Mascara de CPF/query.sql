@@ -37,3 +37,8 @@ CPF
 979.184.772-00 
 */
 
+SELECT SUBSTRING(cpf, 1,3)||'.'||SUBSTRING(cpf, 4,3)
+||'.'||SUBSTRING(cpf, 7,3)||'-'||SUBSTRING(cpf, 10,2)
+FROM natural_person, customers
+WHERE id_customers = customers.id;
+

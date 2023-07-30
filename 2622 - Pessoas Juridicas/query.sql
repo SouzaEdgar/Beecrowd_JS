@@ -33,3 +33,7 @@ name
 Nicolas Diogo Cardoso
 Sabrina Heloisa Gabriela Barros 
 */
+
+SELECT name
+FROM customers, legal_person
+WHERE id_customers = customers.id;

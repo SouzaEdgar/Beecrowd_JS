@@ -26,4 +26,5 @@ price
 396.10 
 */
 
-
+SELECT ROUND(AVG(price), 2) AS price
+FROM products;

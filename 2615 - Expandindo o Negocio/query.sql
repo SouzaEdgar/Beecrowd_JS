@@ -28,3 +28,5 @@ Várzea Grande
 Salvador 
 */
 
+SELECT DISTINCT city
+FROM customers;

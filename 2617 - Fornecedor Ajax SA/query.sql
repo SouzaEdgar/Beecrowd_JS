@@ -38,3 +38,7 @@ name	name
 Red Chair	Ajax SA 
 */
 
+SELECT products.name, providers.name
+FROM products, providers
+WHERE providers.name = 'Ajax SA' AND id_providers = providers.id
+
