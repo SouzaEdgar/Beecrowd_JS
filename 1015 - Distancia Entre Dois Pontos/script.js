@@ -28,4 +28,15 @@ Exemplo de Entrada	Exemplo de Saída
 16.4575
 */
 
+const linha1 = lines[0].replace("\r","").split(" ");
+const linha2 = lines[1].replace("\r","").split(" ");
+
+const x1 = linha1[0];
+const y1 = linha1[1];
+
+const x2 = linha2[0];
+const y2 = linha2[1];
+
+const resultado = ((x2 - x1)**2 + (y2 - y1)**2)**(1/2);
+console.log(resultado.toFixed(4));
 
