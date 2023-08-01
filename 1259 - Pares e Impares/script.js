@@ -1,5 +1,5 @@
 var input = require('fs').readFileSync('./1259 - Pares e Impares/stdin', 'utf8');
-var lines = parseInt(input.split('\n')); 
+var lines = input.split('\n'); 
 /*
 Considerando a entrada de valores inteiros não negativos, ordene estes valores segundo o seguinte critério:
 
@@ -14,4 +14,22 @@ Saída
 Apresente todos os valores lidos na entrada segundo a ordem apresentada acima. Cada número deve ser impresso em uma linha, conforme exemplo abaixo.
 */
 
-console.log(input)
+let even = [];
+let odd  = [];
+
+for (let x = 1; x <= lines[0]; x++) {
+    if (lines[x]%2 === 0) {
+        even.push(lines[x].replace('\r',''));
+    } else {
+        odd.push(lines[x].replace('\r',''));
+    }
+}
+even = even.sort(function(a, b){return a - b});
+odd = odd.sort(function(a,b){return b - a});
+
+for (let y = 0; y < even.length; y++) {
+    console.log(even[y]);
+}
+for (let z = 0; z < odd.length; z++) {
+    console.log(odd[z]);
+}
