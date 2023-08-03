@@ -11,3 +11,17 @@ Saída
 Imprima a saída conforme foi especificado.
 */
 
+let normal = input.split(' ');
+let ord = [];
+
+for (let x in normal) {
+    ord.push(normal[x]);
+}
+ord = ord.sort(function(a,b){return a - b});
+for (let y in ord) {
+    console.log(parseInt(ord[y]));
+}
+console.log();
+for (let z in normal) {
+    console.log(parseInt(normal[z]));
+}
