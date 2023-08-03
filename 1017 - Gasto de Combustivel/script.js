@@ -11,3 +11,4 @@ Saída
 Imprima a quantidade de litros necessária para realizar a viagem, com três dígitos após o ponto decimal
 */
 
+console.log(((lines[0]*lines[1])/12).toFixed(3));
