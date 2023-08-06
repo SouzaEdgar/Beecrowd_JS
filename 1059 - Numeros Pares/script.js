@@ -8,4 +8,9 @@ Saída
 Imprima todos os números pares entre 1 e 100, inclusive se for o caso, um em cada linha.
 */
 
+let x = 1;
+while(x<101) {
+    if(x%2===0) console.log(x);
+    x++;
+}
 
