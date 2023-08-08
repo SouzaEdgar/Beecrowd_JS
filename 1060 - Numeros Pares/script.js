@@ -10,4 +10,10 @@ Seis valores, negativos e/ou positivos.
 Saída
 Imprima uma mensagem dizendo quantos valores positivos foram lidos.
 */
-
+let pares = 0;
+for (let x in lines) {
+    if (parseFloat(lines[x]) > 0) {
+        pares++;
+    }
+}
+console.log(`${pares} valores positivos`);
