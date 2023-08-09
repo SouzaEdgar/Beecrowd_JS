@@ -1,5 +1,5 @@
-var input = require('fs').readFileSync('./1048 - Aumento de Salario/stdin', 'utf8');
-var lines = input.split('\n');
+var n = (require('fs').readFileSync('/dev/stdin', 'utf8')).toString();
+var m = parseFloat(n)
 
 /*
 A empresa ABC resolveu conceder um aumento de salários a seus funcionários de acordo com a tabela abaixo:
@@ -20,19 +20,18 @@ Saída
 Imprima 3 linhas na saída: o novo salário, o valor ganho de reajuste (ambos devem ser apresentados com 2 casas decimais) e o percentual de reajuste ganho, conforme exemplo abaixo.
 */
 
-
-if (input >= 0 && input <= 400) {
-    console.log(`Novo salario: ${(parseFloat(input)+(input*0.15)).toFixed(2)}\nReajuste ganho: ${(input*0.15).toFixed(2)}\nEm percentual: 15 %`);
+if (m >= 0 && n <= 400) {
+    console.log(`Novo salario: ${(m+(n*0.15)).toFixed(2)}\nReajuste ganho: ${(n*0.15).toFixed(2)}\nEm percentual: 15 %`);
 } else 
-if (input >= 400.01 && input <= 800) {
-    console.log(`Novo salario: ${(parseFloat(input)+(input*0.12)).toFixed(2)}\nReajuste ganho: ${(input*0.12).toFixed(2)}\nEm percentual: 12 %`);
+if (m >= 400.01 && n <= 800) {
+    console.log(`Novo salario: ${(m+(n*0.12)).toFixed(2)}\nReajuste ganho: ${(n*0.12).toFixed(2)}\nEm percentual: 12 %`);
 } else
-if (input >= 800.01 && input <= 1200) {
-    console.log(`Novo salario: ${(parseFloat(input)+(input*0.10)).toFixed(2)}\nReajuste ganho: ${(input*0.10).toFixed(2)}\nEm percentual: 10 %`);
+if (m >= 800.01 && n <= 1200) {
+    console.log(`Novo salario: ${(m+(n*0.10)).toFixed(2)}\nReajuste ganho: ${(n*0.10).toFixed(2)}\nEm percentual: 10 %`);
 } else
-if (input >= 1200.01 && input <= 2000) {
-    console.log(`Novo salario: ${(parseFloat(input)+(input*0.07)).toFixed(2)}\nReajuste ganho: ${(input*0.07).toFixed(2)}\nEm percentual: 7 %`);
+if (m >= 1200.01 && n <= 2000) {
+    console.log(`Novo salario: ${(m+(n*0.07)).toFixed(2)}\nReajuste ganho: ${(n*0.07).toFixed(2)}\nEm percentual: 7 %`);
 } else
-if (input > 2000) {
-    console.log(`Novo salario: ${(parseFloat(input)+(input*0.04)).toFixed(2)}\nReajuste ganho: ${(input*0.04).toFixed(2)}\nEm percentual: 4 %`);
+if (m > 2000) {
+    console.log(`Novo salario: ${(m+(n*0.04)).toFixed(2)}\nReajuste ganho: ${(n*0.04).toFixed(2)}\nEm percentual: 4 %`);
 }
