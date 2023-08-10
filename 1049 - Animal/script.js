@@ -12,3 +12,33 @@ A entrada contém 3 palavras, uma em cada linha, necessárias para identificar o
 Saída
 Imprima o nome do animal correspondente à entrada fornecida
 */
+
+if (lines[0].replace('\r','') === 'vertebrado') {
+    if (lines[1].replace('\r','') == 'ave') {
+        if (lines[2].replace('\r','') == 'carnivoro') {
+            console.log('aguia');
+        } else {
+            console.log('pomba');
+        }
+    } else {
+        if (lines[2].replace('\r','') == 'onivoro') {
+            console.log('homem');
+        } else {
+            console.log('vaca');
+        }
+    }
+} else {
+    if (lines[1].replace('\r','') == 'inseto') {
+        if (lines[2].replace('\r','') == 'hematofago') {
+            console.log('pulga');
+        } else {
+            console.log('lagarta');
+        }
+    } else {
+        if (lines[2].replace('\r','') === 'hematofago') {
+            console.log('sanguessuga');
+        } else {
+            console.log('minhoca');
+        }
+    }
+}
