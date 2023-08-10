@@ -16,3 +16,20 @@ A entrada contém apenas um valor de ponto flutuante, com duas casas decimais.
 Saída
 Imprima o texto "R$" seguido de um espaço e do valor total devido de Imposto de Renda, com duas casas após o ponto. Se o valor de entrada for menor ou igual a 2000, deverá ser impressa a mensagem "Isento".
 */
+
+const valor = parseFloat(input);
+if (valor >= 0 && valor <= 2000) {
+    // Isento
+    console.log('Insento');
+} else
+if (valor >= 2000.01 && valor <= 3000) {
+    // 8%
+    console.log(`R$ ${((valor-2000)*0.08).toFixed(2)}`);
+} else
+if (valor >= 3000.01 && valor <= 4500) {
+    // 18%
+    console.log(`R$ ${((1000*0.08)+((valor-3000)*0.18)).toFixed(2)}`);
+} else {
+    // 28%
+    console.log(`R$ ${((1000*0.08)+(1500*0.18)+((valor-4500)*0.28)).toFixed(2)}`);
+}
