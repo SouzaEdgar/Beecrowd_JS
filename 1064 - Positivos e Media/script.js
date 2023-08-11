@@ -10,4 +10,13 @@ A entrada contém 6 números que podem ser valores inteiros ou de ponto flutuant
 Saída
 O primeiro valor de saída é a quantidade de valores positivos. A próxima linha deve mostrar a média dos valores positivos digitados.
 */
+let posVal = 0;
+let avg = 0;
 
+for (let x in lines) {
+    if (parseFloat(lines[x]) > 0) {
+        posVal++;
+        avg += parseFloat(lines[x]);
+    }
+}
+console.log(`${posVal} valores positivos\n${(avg/posVal).toFixed(1)}`);

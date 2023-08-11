@@ -19,3 +19,27 @@ Z segundo(s)
 
 Obs: Considere que o evento do caso de teste para o problema tem duração mínima de 1 minuto.
 */
+// nums
+const time1 = lines[1].split(' : ');
+const time2 = lines[3].split(' : ');
+
+// total
+let w = parseInt(lines[2].replace('Dia ', '')) - parseInt(lines[0].replace('Dia ', ''));
+let x = parseInt(time2[0]) - parseInt(time1[0]);
+let y = parseInt(time2[1]) - parseInt(time1[1]);
+let z = parseInt(time2[2]) - parseInt(time1[2]);
+
+if (z < 0) {
+    z += 60;
+    y -= 1;
+}
+if (y < 0) {
+    y += 60;
+    x -= 1;
+}
+if (x < 0) {
+    x += 24;
+    w -= 1;
+}
+
+console.log(`${w} dia(s)\n${x} hora(s)\n${y} minuto(s)\n${z} segundo(s)`);
