@@ -11,4 +11,6 @@ Saída
 Imprima todos os valores ímpares de 1 até X, inclusive X, se for o caso.
 */
 
-
+for (let x = 0; x <= parseInt(input); x++) {
+    if (x % 2 !== 0 ) console.log(x);
+}

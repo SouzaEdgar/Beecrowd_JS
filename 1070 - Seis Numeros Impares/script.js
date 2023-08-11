@@ -11,4 +11,12 @@ Saída
 A saída será uma sequência de seis números ímpares.
 */
 
-
+let contador = 0;
+let x = parseInt(input);
+while (contador < 6) {
+    if (x%2 !== 0) {
+        console.log(x);
+        contador++;
+    }
+    x++;
+}

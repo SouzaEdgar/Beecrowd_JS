@@ -14,3 +14,11 @@ Saída
 Para cada caso, imprima quantos números estão dentro (in) e quantos valores estão fora (out) do intervalo.
 */
 
+let ttIN = 0;
+let ttOUT = 0;
+for (let x = 1; x <= parseInt(lines[0]); x++) {
+    if (parseInt(lines[x]) >= 10 && parseInt(lines[x]) <= 20) ttIN++;
+    else ttOUT++;
+}
+
+console.log(`${ttIN} in\n${ttOUT} out`);
