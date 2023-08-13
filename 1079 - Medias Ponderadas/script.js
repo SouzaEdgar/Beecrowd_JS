@@ -11,3 +11,12 @@ Saída
 Para cada caso de teste, imprima a média ponderada dos 3 valores, conforme exemplo abaixo.
 */
 
+for (let x = 1; x <= parseInt(lines[0]); x++) {
+    const nums = lines[x].split(' ');
+
+    const a = nums[0];
+    const b = nums[1];
+    const c = nums[2];
+
+    console.log(`${(a*0.2 + b*0.3 + c*0.5).toFixed(1)}`);
+}
