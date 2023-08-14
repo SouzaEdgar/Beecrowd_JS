@@ -1,4 +1,4 @@
-/*
+/* >>> Correcao <<<
 Antigamente a locadora fez um evento em que vários filmes estavam em promoção, queremos saber que filmes eram esses.
 
 Seu trabalho para nós ajudar é selecionar o ID e o nome dos filmes cujo preço for menor que 2.00.
@@ -33,7 +33,6 @@ Exemplo de saída
 id	name
 3	White Duck 
 */
-
 SELECT movies.id, movies.name
 FROM movies, prices
 WHERE value < 2.00 AND id_prices = prices.id
