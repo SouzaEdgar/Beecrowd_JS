@@ -11,3 +11,11 @@ Saída
 Para cada caso de entrada imprima uma mensagem indicando se o segundo valor encaixa no primeiro valor, confome exemplo abaixo.
 */
 
+for (let x = 1; x <= lines[0]; x++) {
+    const valor = lines[x].split(' ');
+    const a = BigInt(valor[0]).toString();
+    const b = BigInt(valor[1]).toString();
+
+    if(a.slice(- b.length) === b) console.log('encaixa');
+    else console.log('nao encaixa');
+}
