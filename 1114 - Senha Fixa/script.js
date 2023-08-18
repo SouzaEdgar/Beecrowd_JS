@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var input = require('fs').readFileSync('./1114 - Senha Fixa/stdin', 'utf8');
 var lines = input.split('\n');
 
 /*
@@ -11,4 +11,13 @@ Saída
 Para cada valor lido mostre a mensagem correspondente à descrição do problema.
 */
 
-
+for (let x in lines) {
+    if(Number.isInteger(parseInt(lines[x]))) {
+        if (parseInt(lines[x]) === 2002) {
+            console.log('Acesso Permitido');
+            break;
+        } else {
+            console.log('Senha Invalida');
+        }
+    }
+}
